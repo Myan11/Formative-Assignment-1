@@ -42,16 +42,18 @@ class MainActivity : AppCompatActivity() {
                 textView.text = "chicken schnitzel with soft drink"
             } else if (timeChosen == "late night snack") {
                 textView.text = "tea and biscuits"
-                // I hve conducted this part of the code with the use of the student manuals and lecturer slides provided.
+                // I have conducted this part of the code with the use of the student manuals and lecturer slides provided.
 
-                // This part of the code is
-
+                // This part of the code is used for if a wrong input or if a misspelled time is prompted into the Edit Text it will display the text "Valid time required".
             } else {
                 textView.text = "valid time required"
+                // I got help with this with the use of my student material aswell as the lecturer slides provided.
 
+                // The last part of the codes only use is for the reset button so that if a wrong input is prompted the user can just click a button to reset it.
                 resetButton.setOnClickListener {
                     timeOfMeal.text.clear()
                     textView.text = ""
+                    // This part of the code was done with the help of our student material and lecturer slides.
 
                 }
 
