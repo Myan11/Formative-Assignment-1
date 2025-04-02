@@ -19,10 +19,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // This part of the code identifies each part of programs Text views, Buttons and edit view which act as a placeholder for each action.
         val resetButton = findViewById<Button>(R.id.resetButton)
         val mealPicker = findViewById<Button>(R.id.mealPicker)
         val timeOfMeal = findViewById<EditText>(R.id.timeOfMeal)
         val textView = findViewById<TextView>(R.id.textView)
+        //
 
         mealPicker.setOnClickListener{
             val timeChosen = timeOfMeal.text.toString().trim().lowercase()
@@ -49,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
-            }
 
             }
     }
