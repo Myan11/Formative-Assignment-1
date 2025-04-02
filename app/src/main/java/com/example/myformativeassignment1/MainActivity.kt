@@ -24,10 +24,11 @@ class MainActivity : AppCompatActivity() {
         val mealPicker = findViewById<Button>(R.id.mealPicker)
         val timeOfMeal = findViewById<EditText>(R.id.timeOfMeal)
         val textView = findViewById<TextView>(R.id.textView)
-        //
+        // The student manuals that was provided aswell as the lecturers slides helped me during this process.
 
         mealPicker.setOnClickListener{
             val timeChosen = timeOfMeal.text.toString().trim().lowercase()
+            // This part of the code gives the time chosen a value to be shown on the Text view like for morning its "Pancakes and orange juice".
 
             if (timeChosen == "morning") {
                 textView.text = "pancakes and orange juice"
@@ -41,6 +42,9 @@ class MainActivity : AppCompatActivity() {
                 textView.text = "chicken schnitzel with soft drink"
             } else if (timeChosen == "late night snack") {
                 textView.text = "tea and biscuits"
+                // I hve conducted this part of the code with the use of the student manuals and lecturer slides provided.
+
+                // This part of the code is
 
             } else {
                 textView.text = "valid time required"
